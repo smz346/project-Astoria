@@ -1,0 +1,12 @@
+{
+  "name": "project-astoria",
+  "version": "1.0.0",
+  "description": "Astoria all-in-one productivity web app",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 5173",
+    "build": "node scripts/build.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

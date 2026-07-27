@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Astoria Hub all-in-one productivity dashboard" />
+    <title>Astoria Hub</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero panel">
+        <div>
+          <p class="eyebrow">✦ Astoria Hub</p>
+          <h1>One calm command center for your day.</h1>
+          <p class="hero-copy">Manage tasks, schedules, budget, meals, wellness, and notes in a single responsive dashboard.</p>
+        </div>
+        <div class="hero-card">
+          <span class="hero-icon">✓</span>
+          <span>All-in-one mode</span>
+          <strong><span id="open-count">2</span> priorities open</strong>
+        </div>
+      </section>
+
+      <section class="stats-grid" aria-label="Overview statistics">
+        <article class="stat-card panel"><div class="icon-bubble">☑</div><span>Tasks</span><strong id="task-count">3</strong><small id="task-detail">2 still open</small></article>
+        <article class="stat-card panel"><div class="icon-bubble">💳</div><span>Cash flow</span><strong>$549.69</strong><small>This week</small></article>
+        <article class="stat-card panel"><div class="icon-bubble">♥</div><span>Wellness</span><strong>82%</strong><small>Habit score</small></article>
+        <article class="stat-card panel"><div class="icon-bubble">◷</div><span>Focus</span><strong>3h 20m</strong><small>Deep work planned</small></article>
+      </section>
+
+      <section class="workspace-grid">
+        <div class="panel tasks-panel">
+          <div class="panel-heading">
+            <div><p class="eyebrow">✓ Planner</p><h2>Tasks</h2></div>
+            <label class="search-box">⌕<input id="search" placeholder="Search" aria-label="Search tasks" /></label>
+          </div>
+          <form class="task-form" id="task-form">
+            <input id="task-input" placeholder="Add a new task" aria-label="New task" />
+            <button type="submit">＋ Add</button>
+          </form>
+          <div class="task-list" id="task-list" aria-live="polite"></div>
+        </div>
+
+        <article class="panel dashboard-card"><div class="card-title"><span class="icon-bubble">📅</span><h2>Schedule</h2></div><ul><li>09:00 • Team sync — Project roadmap</li><li>12:30 • Lunch prep — Mediterranean bowl</li><li>18:00 • Workout — Strength + mobility</li></ul></article>
+        <article class="panel dashboard-card"><div class="card-title"><span class="icon-bubble">$</span><h2>Budget</h2></div><ul><li>Groceries: -$84.32 (Essentials)</li><li>Freelance: $650.00 (Income)</li><li>Streaming: -$15.99 (Subscriptions)</li></ul></article>
+        <article class="panel dashboard-card"><div class="card-title"><span class="icon-bubble">🍽</span><h2>Meals</h2></div><ul><li>Breakfast: yogurt parfait</li><li>Lunch: grain bowl</li><li>Dinner: lemon herb salmon</li></ul></article>
+        <article class="panel dashboard-card"><div class="card-title"><span class="icon-bubble">🔥</span><h2>Habits</h2></div><ul><li>Hydration streak: 6 days</li><li>Meditation: 12 minutes</li><li>Steps: 8,400 / 10,000</li></ul></article>
+        <div class="panel notes-panel"><p class="eyebrow">✎ Notes</p><h2>Quick capture</h2><textarea aria-label="Quick notes">Ideas, reminders, and quick notes live here.</textarea></div>
+      </section>
+    </main>
+    <script src="src/main.js"></script>
+  </body>
+</html>
